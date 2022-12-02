@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap');
+@import url("https://use.fontawesome.com/releases/v5.0.13/css/all.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+}
+
+body {
+  background-color: #c8c8c9;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Header Menu
+header {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background-color: #1a202c;
+  z-index: 998;
+  color: #ffffff;
+
+  .user {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px;
+
+    .user-pp {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+
+    .user-angle {
+      transition: all 0.4s ease-in-out;
+    }
+
+    &:hover {
+
+      .user-angle {
+        transform: rotate(90deg);
+      }
+
+    }
+  }
+
+}
+
+
+// Aside Menu
+aside {
+  width: 220px;
+  height: 100%;
+  background-color: #1a202c;
+  position: fixed;
+  z-index: 999;
+  color: #ffffff;
+  transition: all .7s ease-in-out;
+
+  .big-logo {
+    display: block;
+  }
+
+  .small-logo {
+    display: none;
+  }
+
+  .aside-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+
+    .aside-arrow {
+      line-height: 60px;
+      align-self: end;
+      margin-right: 10px;
+      font-size: 20px;
+      transition: all .7s ease-in-out;
+
+    }
+
+    .aside-menu-ul {
+      width: 100%;
+      font-size: 18px;
+      font-weight: 400;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      li {
+        width: 100%;
+        line-height: 50px;
+        padding: 0 15px;
+        transition: all .4s ease-in-out;
+
+        i {
+          padding-right: 15px;
+          width: 35px;
+          transition: all .2s ease-in-out;
+        }
+
+        span {
+          transition: all 0.4s ease-in-out;
+        }
+
+        .aside-menu-sub-ul {
+          height: 0;
+          opacity: 0;
+          transition: all .5s ease-in-out;
+
+          li {
+            a {
+              color: #1a202c;
+              &:hover{
+
+                font-weight: 500;
+
+              }
+            }
+
+            span {
+              color: #1a202c;
+            }
+
+          }
+        }
+
+        &:hover {
+          background-color: #c8c8c9;
+          color: #000;
+
+          .aside-menu-sub-ul {
+            height: auto;
+            opacity: 1;
+          }
+
+        }
+      }
+
+    }
+  }
+
+  // Aside Menü Küçültüldüğünde
+  &.small {
+    width: 100px;
+
+
+    .big-logo {
+      display: none;
+    }
+
+    .small-logo {
+      display: block;
+      height: 75px;
+      width: auto;
+    }
+
+    .aside-arrow {
+      transform: rotate(-180deg);
+    }
+
+    .aside-menu-ul {
+      li {
+        text-align: center;
+        line-height: 60px;
+
+        i {
+          font-size: 22px;
+          padding: 0;
+        }
+
+        span {
+          position: absolute;
+          left: -150px;
+        }
+        .aside-menu-sub-ul{
+          position: absolute;
+          left: -220px;
+          opacity: 0;
+          display: none;
+        }
+
+        &:hover {
+
+          span {
+            left: 100px;
+            padding: 0 15px;
+            margin-top: -1px;
+            background-color: #1a202c;
+            color: #ffffff;
+
+          }
+          .aside-menu-sub-ul{
+            left: 100px;
+            margin-top: -1px;
+            width: max-content;
+            background-color: #1a202c;
+            opacity: 1;
+            display: block;
+            li{
+
+              a{
+                color: #ffffff;
+              }
+            }
+          }
+
+        }
+
+      }
+    }
+
+
+  }
+
+}
+

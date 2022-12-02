@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.0.13/css/all.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif; }
+
+body {
+  background-color: #c8c8c9; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+header {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background-color: #1a202c;
+  z-index: 998;
+  color: #ffffff; }
+  header .user {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px; }
+    header .user .user-pp {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%; }
+    header .user .user-angle {
+      transition: all 0.4s ease-in-out; }
+    header .user:hover .user-angle {
+      transform: rotate(90deg); }
+
+aside {
+  width: 220px;
+  height: 100%;
+  background-color: #1a202c;
+  position: fixed;
+  z-index: 999;
+  color: #ffffff;
+  transition: all .7s ease-in-out; }
+  aside .big-logo {
+    display: block; }
+  aside .small-logo {
+    display: none; }
+  aside .aside-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px; }
+    aside .aside-menu .aside-arrow {
+      line-height: 60px;
+      align-self: end;
+      margin-right: 10px;
+      font-size: 20px;
+      transition: all .7s ease-in-out; }
+    aside .aside-menu .aside-menu-ul {
+      width: 100%;
+      font-size: 18px;
+      font-weight: 400;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center; }
+      aside .aside-menu .aside-menu-ul li {
+        width: 100%;
+        line-height: 50px;
+        padding: 0 15px;
+        transition: all .4s ease-in-out; }
+        aside .aside-menu .aside-menu-ul li i {
+          padding-right: 15px;
+          width: 35px;
+          transition: all .2s ease-in-out; }
+        aside .aside-menu .aside-menu-ul li span {
+          transition: all 0.4s ease-in-out; }
+        aside .aside-menu .aside-menu-ul li .aside-menu-sub-ul {
+          height: 0;
+          opacity: 0;
+          transition: all .5s ease-in-out; }
+          aside .aside-menu .aside-menu-ul li .aside-menu-sub-ul li a {
+            color: #1a202c; }
+            aside .aside-menu .aside-menu-ul li .aside-menu-sub-ul li a:hover {
+              font-weight: 500; }
+          aside .aside-menu .aside-menu-ul li .aside-menu-sub-ul li span {
+            color: #1a202c; }
+        aside .aside-menu .aside-menu-ul li:hover {
+          background-color: #c8c8c9;
+          color: #000; }
+          aside .aside-menu .aside-menu-ul li:hover .aside-menu-sub-ul {
+            height: auto;
+            opacity: 1; }
+  aside.small {
+    width: 100px; }
+    aside.small .big-logo {
+      display: none; }
+    aside.small .small-logo {
+      display: block;
+      height: 75px;
+      width: auto; }
+    aside.small .aside-arrow {
+      transform: rotate(-180deg); }
+    aside.small .aside-menu-ul li {
+      text-align: center;
+      line-height: 60px; }
+      aside.small .aside-menu-ul li i {
+        font-size: 22px;
+        padding: 0; }
+      aside.small .aside-menu-ul li span {
+        position: absolute;
+        left: -150px; }
+      aside.small .aside-menu-ul li .aside-menu-sub-ul {
+        position: absolute;
+        left: -220px;
+        opacity: 0;
+        display: none; }
+      aside.small .aside-menu-ul li:hover span {
+        left: 100px;
+        padding: 0 15px;
+        margin-top: -1px;
+        background-color: #1a202c;
+        color: #ffffff; }
+      aside.small .aside-menu-ul li:hover .aside-menu-sub-ul {
+        left: 100px;
+        margin-top: -1px;
+        width: max-content;
+        background-color: #1a202c;
+        opacity: 1;
+        display: block; }
+        aside.small .aside-menu-ul li:hover .aside-menu-sub-ul li a {
+          color: #ffffff; }
+
+/*# sourceMappingURL=app.css.map */
