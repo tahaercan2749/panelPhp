@@ -55,13 +55,20 @@ header {
         line-height: 50px;
         padding-left: 15px;
         transition: all .5s ease-in-out; }
+        header .user .header-menu-sub-ul li i {
+          width: 30px; }
         header .user .header-menu-sub-ul li:hover {
           background-color: #c8c8c9;
           border: 1px solid #1a202c; }
+          header .user .header-menu-sub-ul li:hover i {
+            color: #1a202c; }
+          header .user .header-menu-sub-ul li:hover a {
+            color: #1a202c; }
     header .user:hover .user-angle {
       transform: rotate(90deg); }
     header .user:hover .header-menu-sub-ul {
-      right: 0; }
+      right: 0;
+      border: 1px solid #e2e8f0; }
 
 aside {
   width: 220px;
@@ -122,6 +129,10 @@ aside {
         aside .aside-menu .aside-menu-ul li:hover {
           background-color: #c8c8c9;
           color: #000; }
+          aside .aside-menu .aside-menu-ul li:hover i {
+            color: #1a202c; }
+          aside .aside-menu .aside-menu-ul li:hover span {
+            color: #1a202c; }
           aside .aside-menu .aside-menu-ul li:hover .aside-menu-sub-ul {
             height: auto;
             opacity: 1;
@@ -155,7 +166,8 @@ aside {
         padding: 0 15px;
         margin-top: -1px;
         background-color: #1a202c;
-        color: #ffffff; }
+        border: 1px solid #c8c8c9;
+        color: #c8c8c9; }
       aside.small .aside-menu-ul li:hover i {
         color: black; }
       aside.small .aside-menu-ul li:hover .aside-menu-sub-ul {
@@ -163,16 +175,42 @@ aside {
         margin-top: -1px;
         width: max-content;
         background-color: #1a202c;
+        border: 1px solid #c8c8c9;
         opacity: 1;
         display: block; }
-        aside.small .aside-menu-ul li:hover .aside-menu-sub-ul li a {
-          color: #ffffff; }
+        aside.small .aside-menu-ul li:hover .aside-menu-sub-ul li {
+          color: #c8c8c9;
+          text-align: start;
+          vertical-align: middle; }
+          aside.small .aside-menu-ul li:hover .aside-menu-sub-ul li a {
+            color: #c8c8c9; }
+            aside.small .aside-menu-ul li:hover .aside-menu-sub-ul li a i {
+              color: #c8c8c9; }
+          aside.small .aside-menu-ul li:hover .aside-menu-sub-ul li:hover a {
+            color: #1a202c;
+            font-weight: 400; }
+            aside.small .aside-menu-ul li:hover .aside-menu-sub-ul li:hover a i {
+              color: #1a202c; }
 
 .main-div {
   padding-top: 90px;
   padding-left: 250px;
+  padding-right: 30px;
   transition: all .7s ease-in-out; }
   .main-div.small {
     padding-left: 130px; }
+
+.breadcrumb {
+  height: 50px;
+  background-color: #1a202c;
+  border: 1px solid #30353f;
+  color: #c8c8c9;
+  display: flex;
+  align-items: center;
+  margin-bottom: 95px;
+  padding-left: 15px; }
+  .breadcrumb i {
+    width: 25px;
+    text-align: center; }
 
 /*# sourceMappingURL=app.css.map */
