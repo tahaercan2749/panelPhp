@@ -78,7 +78,7 @@ header {
     &:hover {
 
       .user-angle {
-        transform: rotate(360deg);
+        transform: rotate(90deg);
       }
 
       .header-menu-sub-ul {
@@ -240,6 +240,9 @@ aside {
             background-color: #1a202c;
             color: #ffffff;
 
+          }
+          i{
+            color:black;
           }
           .aside-menu-sub-ul {
             left: $aside-small-height;

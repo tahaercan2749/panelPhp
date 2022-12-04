@@ -59,7 +59,7 @@ header {
           background-color: #c8c8c9;
           border: 1px solid #1a202c; }
     header .user:hover .user-angle {
-      transform: rotate(360deg); }
+      transform: rotate(90deg); }
     header .user:hover .header-menu-sub-ul {
       right: 0; }
 
@@ -156,6 +156,8 @@ aside {
         margin-top: -1px;
         background-color: #1a202c;
         color: #ffffff; }
+      aside.small .aside-menu-ul li:hover i {
+        color: black; }
       aside.small .aside-menu-ul li:hover .aside-menu-sub-ul {
         left: 100px;
         margin-top: -1px;
